@@ -21,7 +21,9 @@ const Navbar = () => {
         <>
         {(!isHamburger || isOpenOnMobile) ? <nav class="header_nav">
             <ul>
-                <a href="#" className="close-button" onClick={() => setIsOpenOnMobile(false)}>Close</a>
+                <li className="close-button">
+                    <a href="#"  onClick={() => setIsOpenOnMobile(false)}>Close</a>
+                </li>
                 <li>Home</li>
                 <li>About</li>
                 <li>Login</li>
